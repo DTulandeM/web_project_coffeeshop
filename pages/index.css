@@ -3,7 +3,7 @@
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Inter", "Arial", sans-serif;
-  font-family: "Noto Serif", "Times New Roman", serif;
+  /*font-family: "Noto Serif", "Times New Roman", serif;*/
   font-size: 16px;
   line-height: 20px;
 }
@@ -175,6 +175,7 @@
 .recipes__iframe {
   height: 273px;
   width: 480px;
+  border: 0px;
 }
 .recipes__video-caption {
   color: #fff;
