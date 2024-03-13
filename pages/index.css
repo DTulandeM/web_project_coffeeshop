@@ -122,6 +122,7 @@
   line-height: 20px;
   color: #838383;
 }
+
 .recipes {
   background-color: #0a2750;
   background-image: url(../images/background_recipes.svg);
@@ -135,6 +136,7 @@
   position: relative;
   box-sizing: border-box;
 }
+
 .recipes__title {
   max-width: 580px;
   margin: 100px 0 0 80px;
