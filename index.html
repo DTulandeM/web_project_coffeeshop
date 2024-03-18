@@ -8,7 +8,6 @@
     <meta name="keywords" content="cafeteria coffeeshop " />
     <title>Coffee Triple Ten</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,10 +44,12 @@
             class="nav__logo"
           />
           <ul class="nav__links">
-            <li><a href="#Recetas"></a> Recetas</li>
-            <li><a href="#Reservacion"></a>Reservar una mesa</li>
-            <li>Menú</li>
-            <li>Contactos</li>
+            <li><a href="#recetas" class="nav__link"> Recetas</a></li>
+            <li>
+              <a href="#reservacion" class="nav__link">Reservar una mesa</a>
+            </li>
+            <li><a href="#menu" class="nav__link">Menú</a></li>
+            <li><a href="#contactos" class="nav__link">Contactos</a></li>
           </ul>
         </nav>
         <h1 class="header__title">
@@ -83,7 +84,7 @@
         </div>
       </header>
       <main class="content">
-        <section id="Recetas" class="recipes">
+        <section id="recetas" class="recipes">
           <h2 class="recipes__title">Recetas</h2>
           <p class="recipes__subtitle">
             Echa un vistazo a algunas de nuestras recetas para que elabores tu
@@ -119,7 +120,7 @@
             </div>
           </div>
         </section>
-        <section id="Reservacion" class="reservation">
+        <section id="reservacion" class="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
           <div>
             <form class="reservation__form form">
@@ -184,10 +185,158 @@
             </form>
           </div>
         </section>
-        <section class="menu"></section>
-        <section class="about"></section>
+        <section id="menu" class="menu">
+          <h2 class="menu__title">Menú</h2>
+          <p class="menu__subtitle">
+            Elaboramos nuestro café con granos certificados de comercio justo,
+            tostados localmente,
+            <span
+              >y usamos tazas biodegradables. Todos los tés de nuestra colección
+              a $2/taza.</span
+            >
+          </p>
+          <ul class="menu__cards">
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">De filtro</h3>
+                <ul class="card__content-items">
+                  <li class="card__list-item">
+                    Regular&nbsp;(350&nbsp;ml)
+                    <span class="card__list-divider"></span>$1
+                  </li>
+                  <li class="card__list-item">
+                    Grande&nbsp;(470&nbsp;ml)
+                    <span class="card__list-divider"></span>$1.25
+                  </li>
+                  <li class="card__list-item">
+                    XL&nbsp;(590&nbsp;ml)
+                    <span class="card__list-divider"></span>$1.5
+                  </li>
+                  <li class="card__list-item">
+                    Tamaño&nbsp;familiar&nbsp;(700&nbsp;ml,&nbsp;descafeinado)
+                    <span class="card__list-divider"></span>$1.75
+                  </li>
+                  <li class="card__list-item">
+                    Café&nbsp;helado&nbsp;(470&nbsp;ml)
+                    <span class="card__list-divider"></span>$2
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Espresso</h3>
+                <ul class="card__content-items">
+                  <li class="card__list-item">
+                    Macchiato
+                    <span class="card__list-divider"></span>$2.25
+                  </li>
+                  <li class="card__list-item">
+                    Cortado
+                    <span class="card__list-divider"></span>$2.5
+                  </li>
+                  <li class="card__list-item">
+                    Mocha
+                    <span class="card__list-divider"></span>$3
+                  </li>
+                  <li class="card__list-item">
+                    Amanecer&nbsp;en&nbsp;Bay&nbsp;Area&nbsp;(descafeinado)
+                    <span class="card__list-divider"></span>$10
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Repostería</h3>
+                <ul class="card__content-items">
+                  <li class="card__list-item">
+                    Croissant&nbsp;de&nbsp;almendra
+                    <span class="card__list-divider"></span>$2
+                  </li>
+                  <li class="card__list-item">
+                    Pan&nbsp;de&nbsp;banana
+                    <span class="card__list-divider"></span>$1.75
+                  </li>
+                  <li class="card__list-item">
+                    Tarta&nbsp;de&nbsp;limón
+                    <span class="card__list-divider"></span>$3
+                  </li>
+                  <li class="card__list-item">
+                    Pastel&nbsp;Blue&nbsp;velvet
+                    <span class="card__list-divider"></span>$3.75
+                  </li>
+                  <li class="card__list-item">
+                    Cookie&nbsp;web
+                    <span class="card__list-divider"></span>$2
+                  </li>
+                  <li class="card__list-item">
+                    Baguette&nbsp;fresco
+                    <span class="card__list-divider"> </span>$0.25
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <h2 class="about__title">Sobre la cafetería</h2>
+          <div class="about__content">
+            <p class="about__paragraph">
+              Nuestra cafetería se ubica en la Biblioteca Triple Peaks. Cuenta
+              con 6 mesas y WiFi gratuito.
+            </p>
+            <p class="about__paragraph">
+              Nuestra principal misión es mantener a nuestros comensales cómodos
+              y con energía.
+            </p>
+            <p class="about__paragraph">
+              Además, buscamos reducir nuestro impacto ambiental, así que no
+              vendemos tazas de un solo uso. ¡Pero puedes comprar una de
+              nuestras tazas reutilizables!
+            </p>
+          </div>
+          <div class="about__circle"></div>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer id="contactos" class="footer">
+        <div class="footer__content">
+          <div>
+            <img
+              src="./images/logo_coffeeshop_light.svg"
+              alt="Triple expresso Logo white"
+              class="footer__logo"
+            />
+          </div>
+
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Redes Socilaes</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link"
+                  ><img
+                    src="./images/facebook_white.svg"
+                    alt="Logo Facebook white"
+                    class="footer__social-icon"
+                  />Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link"
+                  ><img
+                    src="./images/instagram_white.svg"
+                    alt="Logo instagram white"
+                    class="footer__social-icon"
+                  />Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">&copy; 2024 Davinson Tulande</p>
+      </footer>
     </div>
   </body>
 </html>
